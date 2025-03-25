@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "../styles/Shop.css";
+import "../styles/shop.css";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const Shop = () => {
