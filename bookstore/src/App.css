@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+
+/* Style for the Logo Container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style for the logo image */
+.logo-img {
+  height: auto; /* Set the logo height */
+  width: 200px; /* Make the width adjust automatically to preserve the aspect ratio */
+  margin-right: 25px;
+  align-items: center;
+}
+.icons {
+  display: flex;
+}
+/* Navbar overall styling */
+.navbar {
+  background-color: #00001B; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow below navbar */
+}
+
+/* Icons Styling */
+.icon {
+  font-size: 50px; /* Set icon size */
+  padding-left: 20px;
+  color: #c39a1c;
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.icon:hover {
+  color: #c39a1c; /* Change icon color on hover */
+}
+
+/* Search bar adjustments */
+input[type="text"] {
+  height: 30px; /* Height of the search input */
+  
+  padding-left: 10px; /* Padding inside the input field */
+}
+
+input[type="text"]::placeholder {
+  color: #888888;
+}
+
+input[type="text"]:focus {
+  outline: none; 
+}
+/* Navbar Item Styling */
+.nav-item {
+  position: relative; 
+}
+
+/* Navbar Link Styling */
+.nav-link {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Bokor", system-ui;
+  color: #f3f4f6; 
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+
+/* Dropdown Menu */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+ul li a {
+  font-size: 40px;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #c39a1c; 
+  color:#001529;
+}
+
+ul li {
+  width: 200px;
+}
+.pt-4{
+  background-color: #001529;
+  padding: 1rem 0 1rem 0;
+}
+.announcement-bar {
+  background-color: #fbbf24; /* Gold background (Tailwind's bg-yellow-500) */
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0; /* Padding for top and bottom (py-2) */
+}
+
+.announcement-bar p {
+  font-size: 20px; /* text-sm equivalent */
+  font-family: "Piedra", serif;
+  font-weight: 400;
+  color:#001529;
+}

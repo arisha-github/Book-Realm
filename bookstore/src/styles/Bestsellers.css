@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.bestsellers-container {
+    position: relative;
+    background-image: url('../bestsellerbg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 75px;
+   
+  }
+  .swiper-pagination-bullet {
+    background-color: white !important; /* Make pagination dots white */
+    opacity: 1; 
+  }
+ 
+  
+  
+  .heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    background-color: #001529; /* Dark background */
+    padding: 20px;
+    opacity: 0.8;
+    border-bottom: 1px solid var(--color-dark-Ex);
+    margin-bottom: 30px; /* Space below the heading section */
+  }
+  
+  .swiper-wrapper {
+    display: flex; /* Align all swiper slides in a horizontal row */
+  
+  
+  }
+  .book-title h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+ 
+  .bestsellerbook-card{
+    display: flex;
+    flex-direction: column;  /* Ensure the image and info are stacked vertically */
+              /* Space between the image and the info */
+    align-items: center;     /* Center the content horizontally */
+    text-align: center;
+  }
+  
+  .bestsellersbook-info {
+    color: white;
+    font-size: 20px; 
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    text-align: center;      /* Ensure text is centered under the image */
+  }
+  
+  .bestsellersbook-info > div {
+    margin-top: 8px;  
+    margin-bottom: 15px;
+  
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .swiper{
+    padding: 0 70px 0 70px;
+  }
+  .swiper-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .diamonds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  .small-diamond,
+  .large-diamond {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+  
+  .large-diamond {
+    font-size: 1.5rem;
+    color: #C39A1C;
+  }
+  
+  .bestseller-image {
+    width: 170px;
+    margin: 0px 50px 10px 50px;
+  }
+  
+  .bestseller-btn {
+    position: absolute;
+    bottom: 20px; /* Position the button 20px from the bottom */
+    right: 20px; /* Position the button 20px from the right */
+    background-color: white; /* Black background */
+    color: #001529; /* White text */
+    padding: 10px 20px; 
+    margin-right: 40px;
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between the text and icon */
+    text-decoration: none; 
+    z-index: 10; /* Ensure the button is above other content */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+  .addtocart{
+    padding: 10px 15px;
+    border: 1px solid white;
+    font-size: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  .button-prev-slide, .button-next-slide {
+    
+    border: none;
+    padding: 10px 15px;
+    font-size: 36px; /* Larger size for better visibility */
+    color: white; /* White color for the arrows */
+    cursor: pointer;
+    z-index: 10; /* Ensure the buttons are above the swiper */
+  }
+  
+  .authors-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('./genrebgg.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .authors-section h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Mountains of Christmas', sans-serif;
+    color: #C39A1C;
+    text-align: center; /* Center the title text */
+    line-height: 1.2; /* Adjust line height for better spacing */
+  }
+  
+  .authors-section p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .authors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .author-card {
+    text-align: center;
+    max-width: 250px;
+    background-color: #C39A1C;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .author-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .author-image {
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  
+  .author-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #001F3F;
+  }
+  
+  .author-card p {
+    font-size: 0.9rem;
+    color: white;
+  }
+  .benefits-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #001F3F; /* Navy Blue Background */
+    color: #C39A1C; /* Gold Text */
+  }
+  
+  .benefit {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+  }
+  
+  .benefit-icon {
+    font-size: 3rem;
+    color: #C39A1C; /* Gold Icons */
+  }
+  
+  .benefit-text h4 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .benefit-text p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .benefit-text {
+    text-align: left;
+  }

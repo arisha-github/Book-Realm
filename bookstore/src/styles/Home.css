@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+/* Hero Section Styling */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    height: 585px;
+    gap: 12px;
+    padding: 4rem 2rem; 
+    background-image: url('../herobg.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* For larger screens (md and up) */
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row;
+    }
+}
+
+/* Title Styling */
+.hero-section h1 {
+    font-size: 5rem; 
+    font-weight: 500; 
+    margin-bottom: 1.75rem; /* margin below the heading */
+    font-family: 'Mountains of Christmas', sans-serif;
+    color: white; /* White text */
+    text-align: center; /* Center the title text */
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.hero-section h1 span {
+    display: block;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #C39A1C; 
+    color: #001529;
+    padding: 15px 40px 15px 40px; /* trbl*/
+    font-size: 27px; 
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin:0 auto;
+    display: flex;
+   
+}
+
+.btn-primary:hover {
+    background-color: #a58317; /* Darker shade of the button color */
+}
+
+/* Image Styling */
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+
+/* Ensure padding for all sections in the hero container */
+.hero-section > div {
+    padding: 1rem; /* Add padding for inner content */
+}
+/* Container for the entire gallery */
+.book-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e2d;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+.gallery-heading {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Book Gallery Scroll Container */
+.book-gallery {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto; /* Scroll bar for horizontal overflow */
+  white-space: nowrap;
+  padding: 10px 0;
+  height: 280px;
+}
+
+/* Individual Book Item */
+.book-item {
+  display: inline-block;
+  text-decoration: none;
+  color: #f9d784;
+  text-align: center;
+  width: 150px;
+}
+
+/* Book Cover Image */
+.book-cover img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.book-cover img:hover {
+  transform: scale(1.05);
+}
+
+/* Genre Text */
+.book-genre {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'Verdana', sans-serif;
+}
+
+
+/* Banner container */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Blurred background */
+.banner-background {
+  background-image: url('./Night.jpg');
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+
+
+}
+
+/* Content container */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.banner-content h1, .banner-content p{
+  color: white;
+}
+
+/* Quote styling */
+.quote {
+  font-size: 2rem;
+  font-weight: 700;
+  color: antiquewhite;
+  margin: 0;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Author styling */
+.authorquote {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}

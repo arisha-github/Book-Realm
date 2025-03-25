@@ -1,0 +1,163 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+  font-family: 'wizard'; 
+  src: url('../fonts/wizard.ttf') format('truetype'); /* Corrected format */
+}
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+  background: url("./genrebgg.jpg") center/cover no-repeat;
+}
+
+/* Contact Form Section */
+.contact-form {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.contact-form h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #C39A1C;
+  margin-bottom: 1rem;
+  font-family: 'wizard';
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+  color: #C39A1C;
+  font-size: 15px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  color: #C39A1C;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 45px; /* Uniform height for all fields */
+  resize: none; /* Prevent textarea resizing */
+}
+
+textarea {
+  height: 100px; /* Same height as other input fields */
+  font-family: "Playfair Display", serif;
+  background-color: #C39A1C;
+}
+
+.submit-btn {
+  display: inline-block;
+  background-color: #001529;
+  color: white;
+  font-family: "Playfair Display", serif;
+  padding: 10px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.submit-btn span {
+  margin-left: 5px;
+  color: white;
+}
+
+/* Contact Info Section */
+.contact-info {
+  flex: 1;
+  color: #C39A1C;
+  font-size: 20px;
+}
+
+.contact-info h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+.contactform-input{
+  background-color: #C39A1C;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+.form-group ::placeholder{
+  color: aliceblue;
+}
+.social-icons {
+  display: flex; /* Arrange icons in a row */
+  gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 45px; /* Set a uniform size for icons */
+  height: 45px;
+  border-radius: 50%; /* Circular icons */
+  background-color: white; /* Background for icons */
+  border: 1px solid black; /* Border for styling */
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

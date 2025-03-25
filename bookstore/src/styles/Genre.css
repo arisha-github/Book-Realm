@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* General Genre Container */
+.genre-container {
+    background-color: #001529; /* Dark background */
+    padding: 40px 20px;
+    background-image: url();
+    color: #fff;
+    text-align: center;
+}
+
+/* Heading Section */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.line {
+    width: 50px; /* Small line width */
+    height: 2px;
+    background-color: #666; /* Line color */
+    margin: 10px auto;
+}
+
+.diamonds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.small-diamond,
+.large-diamond {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.large-diamond {
+    font-size: 1.5rem;
+    color: #C39A1C;
+}
+
+.text {
+    color: #C39A1C;
+    font-size: 2.5rem;
+    font-family: 'Mountains of Christmas', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filter-buttons button {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #C39A1C;
+    transition: 0.3s;
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.filter-buttons button:hover {
+    color: white;
+}
+
+.filter-buttons .active {
+    border-bottom: 3px solid #C39A1C;
+    color: white;
+}
+
+/* Books Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.genre-image img {
+   
+    width: 170px;
+    height: 200px;
+    object-fit: contain;
+    height: auto;
+    margin: 0 auto;
+}
+.genre-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  background-color: #001529; /* Dark background */
+  padding: 20px;
+  opacity: 0.8;
+  border-bottom: 1px solid var(--color-dark-Ex);
+  margin-bottom: 30px; /* Space below the heading section */
+}
+.genre-info {
+    color: #C39A1C;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+}
+
+.genre-info h4 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: white;
+}
+.genre-info h5 {
+    font-size: 20px;
+    color: white;
+    margin: 5px 0;
+}
+
+.genre-info small {
+    color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-buttons {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-buttons button {
+        padding: 8px 10px;
+    }
+}

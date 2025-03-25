@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+.product-page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-image: url('../shopbg.jpg');
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Limit the max width to prevent stretching */
+  gap: 20px;
+}
+
+.product-header,
+.product-details {
+  width: 100%; /* 50% width for each section */
+  display: flex;
+  flex-direction: row;
+  
+  gap: 15px;
+}
+
+.product-header {
+  align-items: flex-start; /* Align image and wishlist button to the left */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 500px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  padding-left: 70px;
+  
+}
+
+.wishlist-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wishlist-button.added {
+  color: red;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  color: white;
+
+}
+
+.product-authors {
+  font-size: 20px;
+  color: #c39a1c;
+}
+
+.product-price {
+  font-size: 30px;
+  font-family: "IM Fell Double Pica", serif;
+  font-style: normal;
+  color: white;
+}
+
+.product-description {
+  font-size: 15px;
+  color: white;
+  font-family: "IM Fell Double Pica", serif;
+  font-style: normal;
+  position: relative;
+  width: 500px;
+  line-height: 1.5;
+ 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-description.expanded {
+  max-height: none;
+}
+
+.show-more {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.tabs-section {
+  width: 100%; /* 100% width for tabs section */
+  margin-top: 20px;
+  align-items: center;
+  padding: 15px;
+  
+  font-size: 20px;
+ 
+}
+.p-add-to-cart-button:active {
+  transform: scale(0.95); /* Button shrinks slightly when clicked */
+  background-color: #ccc;
+}
+
+.tabs-navigation {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tabs-navigation button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.tabs-navigation button.active {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+.tab-content p{
+  color: black;
+  font-size: 17px;
+  font-family: "IM Fell Double Pica", serif;
+}
+
+
+.tab-content {
+  font-size: 16px;
+  padding: 20px;
+  line-height: 1.6;
+  font-family: "IM Fell Double Pica", serif;
+  margin: 0 auto;
+  width: 700px;
+  color: black;
+}
+.quantity-subtotal-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  color:#c39a1c;
+  gap: 10px;
+}
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+}
+
+.quantity-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Playfair Display", serif;
+}
+
+.quantity-button:hover {
+  background-color: #f0f0f0;
+}
+
+.quantity-value {
+  margin: 0 10px;
+  font-size: 16px;
+ 
+  font-weight: bold;
+  color: black;
+}
+
+
+.quantity-value {
+  font-size: 20px;
+  color: black;
+  min-width: 30px;
+  text-align: center;
+}
+
+.subtotal {
+  font-size: 20px;
+  color: #c39a1c;
+  gap: 10px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
+}
+.subtotal strong{
+  color: white;
+}
+
+.p-add-to-cart-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #c39a1c;
+  font-family: "IM Fell Double Pica", serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically center the icon and text */
+  justify-content: center; /* Center content within the button */
+  gap: 10px; /* Add spacing between the icon and text */
+}
+.quantity-controls strong{
+  color: white;
+}
+.add-to-wishlist-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: white;
+  font-family: "IM Fell Double Pica", serif;
+  color: #c39a1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically center the icon and text */
+  justify-content: center; /* Center content within the button */
+  gap: 10px; /* Add spacing between the icon and text */
+}
+
+.basket-icon {
+  font-size: 24px; /* Adjust the size of the basket icon */
+}
+
+.add-to-cart-button:hover {
+  background-color: #9f7d1c;
+}
+.add-review-button{
+  border: 2px solid red;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.add-review-button:hover{
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  transition: 0.5s ease;
+}

@@ -1,0 +1,100 @@
+/* Styles for the container */
+.ereader-container {
+    height: 150vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Background image styles */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  /* Background video styles */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Right-hand navigation bar */
+  .nav-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(128, 118, 118, 0.5); /* Transparent background */
+    color: #000000;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation title */
+  .nav-title {
+    font-size: 2.5rem;
+    color: #ffdb58;
+    font-family: 'wizard';
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Dropdown sections */
+  .nav-section {
+    margin-bottom: 20px;
+  }
+  
+  .nav-section h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: black;
+  }
+  
+  /* Ambiance buttons */
+  .ambiance-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #90730d;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .ambiance-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Book preview frame */
+  .book-preview-frame {
+    height: 80%;
+    width: 47%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  

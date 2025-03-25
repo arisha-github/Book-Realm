@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'wizard'; 
+    src: url('../fonts/wizard.ttf') format('truetype'); /* Corrected format */
+}
+.shophero {
+    background: url('../goldbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    color: white;
+    text-align: center;
+    height: 600px;
+    padding: 100px 20px; /* Adjust padding as needed */
+  }
+
+  
+  .shop-subtitle{
+    margin: 0;
+    font-size: 70px;
+    font-family: 'wizard'; 
+    color: white;
+  }
+  .shophero p{
+    font-family: "Lato", serif;
+    font-weight: 100;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  
+
+.shop-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #fdfdfd;
+}
+
+.shop-title, .shop-title-one {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+}
+.shop-title-one{
+    font-family: 'Mountains of Christmas', sans-serif;
+    font-size: 55px;
+    color:#c39a1c;
+}
+.shop-description {
+  
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+   
+    line-height: 1.6;
+    position: static; /* No need for absolute positioning when using flexbox */
+}
+
+
+
+
+/* Shop content layout */
+.shop-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Sidebar styling */
+.filters-sidebar {
+    flex: 0 0 250px;
+    background-color: #001529;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.filters-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #c39a1c;
+        font-family: "IM Fell Double Pica", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+.filter-price{
+    color: #F2ECE1;
+
+        font-family: "IM Fell Double Pica", serif;
+        font-weight: 400;
+        font-style: normal;
+      font-size: 20px;
+}
+
+.filter-category, .filter-price, .sort-by {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #c39a1c;
+
+}
+.sort-by{
+    font-family: "IM Fell Double Pica", serif;
+    font-size: 25px;
+    display: flex;
+    justify-items: center;
+}
+.wishlist-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.wishlist-button:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.sort-by select {
+   
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.filter-category select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.filter-price .price-slider {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.filter-price .price-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.apply-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "IM Fell Double Pica", serif;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Books grid */
+.books-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.book-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-images {
+    width: 170px;
+    height: 250px;
+    display: flex;
+    margin: 0 auto 10px;
+    object-fit: contain; /* or 'contain' based on preference */
+   
+    border-radius: 5px; /* Optional: rounded corners */
+  }
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F2ECE1;
+        font-family: "IM Fell Double Pica", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+    margin: 10px 0;
+    white-space: normal; /* Allow the text to wrap */
+    overflow: hidden; /* Hide anything beyond two lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Add ellipsis (...) if there are more than two lines */
+}
+
+.book-price {
+    font-size: 17px;
+    color: #c39a1c;
+    margin-bottom: 10px;
+    font-family: "IM Fell Double Pica", serif;
+}
+
+
+
+/* Shop container background */
+.shop-container {
+    background-color: #F2ECE1;
+    background-image: url('../ubg.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.wishlist-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.price-input {
+    margin-top: 5px;
+    width: 80px;
+}
+
+.price-slider {
+    margin-top: 10px;
+}
+
+.apply-button {
+    margin-top: 10px;
+}
+
+.sort-by-container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-by select {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+ 
+    border-radius: 4px;
+    margin-left: 10px; /* Space between search bar and sort dropdown */
+}
+.search-and-sort {
+    display: flex;
+   
+    color: #c39a1c;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar-wrapper {
+    position: relative;
+    width: 100%; /* Makes the search bar take 80% of the container's width */
+    
+  }
+  
+  .booksearch-input {
+    width: 100%;
+    padding: 20px 60px; /* Add space for the magnifying glass */
+    font-size: 22px; /* Larger text */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .search-icon-button {
+    position: absolute;
+    right: 20px; /* Positions the button inside the input */
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .search-icon-button:hover {
+    color: yellow; /* Optional hover effect */
+  }
+  .filter-authors {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter-authors h3 {
+    font-size: 18px;
+    color: #c39a1c;
+    margin-bottom: 10px;
+    font-family: "IM Fell Double Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .filter-authors label {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px; /* Adjust font size for labels */
+  white-space: nowrap; /* Prevents wrapping to the next line */
+  }
+  
+  .filter-authors input[type="checkbox"] {
+    transform: scale(0.4); /* Reduce size of the checkboxes */
+    margin-left: 10px; /* Space between author and checkbox */
+  }
+  .filter-authors span {
+    flex-grow: 1; /* Ensures author names align to the left */
+    text-align: left; /* Aligns text to the left */
+  }

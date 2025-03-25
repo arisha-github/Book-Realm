@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.login-container {
+    background: url("./signup.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Arial", sans-serif;
+    padding-bottom: 60px;
+  }
+  .input[type="text"]{
+    height: 60px;
+  }
+ 
+  .loginbutton{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 1.2rem; /* Larger button text */
+    cursor: pointer;
+    border-radius: 60px;
+    transition: background 0.3s;
+  }
+
+    .logo {
+        margin: 0 auto;  
+      }
+  
+  .logo img {
+    width: 200px; 
+    margin: 1rem 0; /* Adjust margin as needed */
+  }
+  .logo-container {
+    display: flex;
+    align-items: center; /* Align the back button and logo vertically */
+    gap: 1rem; /* Add space between the back button and the logo */
+  }
+  
+ 
+    .loginheader-container {
+        display: flex;
+        align-items: center; 
+        margin-bottom: 2rem;  
+      }
+  
+ 
+      .line {
+        width: 50px; 
+        height: 1px;
+        background-color: #666; /* Line color */
+        margin: 0 10px;
+        flex-grow: 1;
+      }
+      
+      
+      .line-one {
+        width: 480px; 
+        height: 1px;
+        background-color: #666; /* Line color */
+        margin: 0 10px;
+        flex-grow: 1;
+      }
+      
+
+  
+  .diamonds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  .small-diamond,
+  .large-diamond {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+  
+  .large-diamond {
+    font-size: 1.5rem;
+    color: #C39A1C;
+  }
+  
+  .text {
+    color: #C39A1C;
+    font-size: 2.5rem;
+    font-family: 'Mountains of Christmas', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 20px;
+    text-align: center;
+  } 
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Adds space between the input fields */
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    max-width: 500px; /* Limit the width of the form */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 1rem; /* Increase padding for larger input size */
+    font-size: 1.1rem; /* Increase font size for better visibility */
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 15px;
+    height: 60px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    color: white;
+  }
+  .typetext{
+    width: 100%;
+    padding: 1rem; /* Increase padding for larger input size */
+    font-size: 1.1rem; /* Increase font size for better visibility */
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 15px;
+    height: 60px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    color: white;
+  }
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .name-inputs {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .name-inputs div {
+    flex: 1;
+  }
+  
+  .signup-button {
+    background-color: #8ea2ff;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem; /* Larger button text */
+    cursor: pointer;
+    border-radius: 60px;
+    transition: background 0.3s;
+  }
+  
+  .signup-button:hover {
+    background-color: #5a7acc;
+  }
+  .loginbutton:hover {
+    background-color:white;
+    color: black;
+  }
+  
+  .back-button {
+    position: absolute; /* Take it out of the normal flow */
+    left: 10px; /* Move the back button to the left side */
+    margin-right: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  .header {
+
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: center; /* Vertically center the back button and logo */
+    justify-content: center; /* Center content horizontally */
+    position: relative; /* Allows independent positioning of child elements */
+  }
+  

@@ -1,0 +1,107 @@
+.wishlist-container {
+    padding: 20px;
+    text-align: center;
+    background: url("./genrebgg.jpg") center/cover no-repeat;
+}
+
+.wishlist-title {
+    font-family: 'wizard';
+    font-size: 200px; /* Updated font size for wishlist title */
+    color: #ffffff; /* Optional: Add color for better contrast on background */
+    margin-bottom: 20px;
+}
+
+/* Wishlist Item Styles */
+.wishlist-item {
+    border: 2px solid #003366; /* Dark blue border around each book card */
+    background-color: white; /* Book card background */
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px; /* Ensure consistent width */
+    text-align: center;
+    margin-bottom: 10px; /* Align with shelf spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Image inside the book card */
+.wishlist-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional: Rounded edges for images */
+}
+
+/* Wishlist book title */
+.wishlist-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+/* Buttons: Add to Cart and Remove */
+.add-to-cart-button,
+.remove-button {
+    background-color: #007bff; /* Default button color for Add to Cart */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%; /* Set width to 50% for both buttons */
+    cursor: pointer;
+    margin: 0; /* Remove any extra margin */
+    border-radius: 5px 0 0 5px; /* Rounded edges for Add to Cart */
+    font-size: 14px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
+
+.remove-button {
+    background-color: #dc3545; /* Red for Remove button */
+    border-radius: 0 5px 5px 0; /* Rounded edges for Remove button */
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+/* Arrange buttons side by side */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+    gap: 0; /* No gap between buttons */
+}
+
+/* Shelf Styling */
+.shelf-wishlist{
+    position: relative;
+    background: #0a173d; /* Shelf base color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow under shelf */
+    height: 20px;
+    margin-top: -10px; /* Overlap with books slightly */
+    margin-bottom: 30px; /* Spacing between shelves */
+    width: 100%; /* Extend shelf width */
+}
+
+.shelf-wishlist::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 10%;
+    right: 10%;
+    height: 10px;
+    background: #846d52; /* Shelf shadow color */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    transform: translateY(5px); /* Shadow below the shelf */
+}
+
+/* Wishlist Grid */
+.wishlist-grid {
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 20px;
+    justify-content: center;
+    position: relative; /* Position relative for shelf alignment */
+}

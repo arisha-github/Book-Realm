@@ -1,0 +1,205 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Icon Styling */
+.custom-header .anticon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Trigger Button (Sidebar Toggle) */
+.trigger-btn {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #c39a1c; /* Gold color for the button */
+}
+
+/* Sidebar Styling */
+.sider {
+  height: 200vh;
+  position: fixed; 
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Logo Styling */
+.logo {
+  margin: 40px 0;
+}
+
+/* Styling for Sidebar Menu */
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: 500;
+  background-color: #00001b; /* Dark background for the sidebar */
+  color: white !important; /* Ensures menu text is white */
+}
+
+/* Menu Item Selection */
+.ant-menu-item-selected {
+  background-color: #c39a1c !important; 
+  color: black !important; /* Text color changes to black for selected items */
+}
+
+.ant-menu-item {
+  color: white !important; /* Ensures all menu items are white by default */
+}
+
+.ant-menu-item:hover {
+  color: white !important; /* Ensures menu item text is white on hover */
+}
+
+
+
+/* General Styles */
+.app {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    
+  }
+  
+  .main{
+    background-image: url('./ubg.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Main Content */
+  .content {
+    width: 80%;
+    padding: 20px;
+ 
+  }
+  
+  .content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+  span{
+    color: white;
+  }
+  
+  .search-container i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #555;
+  }
+  
+  /* Section */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h3 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .shelf {
+    display: flex;
+    justify-content: center; /* Centers the shelf items */
+    align-items: flex-end;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .shelf::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 10px;
+    background: #846d52;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(5px);
+  }
+  .searchfavbooks{
+    padding: 10px 20px;
+    font-Size: 18px;
+    width: 500px; 
+    border: 1px solid lightgray;
+    border-Bottom: "2px solid black";
+    border-radius: "5px";
+    background-color: "white";
+    padding-left: "40px";
+  }
+  .book {
+    width: 150px; /* Increased size of the book */
+    height: 230px; /* Increased size of the book */
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+  
+  }
+
+
+  .book-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 20%;
+    background-color: white;
+  }
+  
+  
+  .book-container:hover .book {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .read-now {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .book-container:hover .read-now {
+    opacity: 1; /* Text appears when hovered */
+    visibility: visible;
+  }
+  

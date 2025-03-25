@@ -1,0 +1,95 @@
+
+  /* Container with background image */
+  .container {
+    background: url("signup.jpg") no-repeat center center/cover;
+    min-height: 100vh; /* Ensure it covers the entire viewport height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Yellow box styling */
+  .thank-you-box {
+    background-color: #fad02c;
+    padding: 20px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  /* Checkmark style */
+  .checkmark-icon {
+    font-size: 50px;
+    color: green;
+
+    margin-bottom: 30px;
+    margin:0 auto;
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 30px;
+    font-family: "wizard";
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  strong {
+    color: #000;
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    margin: 20px 0;
+    background: #000; /* Black background for order summary */
+    color: #fff; /* White text to contrast against black background */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .order-summary h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* White text for the header */
+  }
+  
+  .order-item,
+  .order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .order-total {
+    font-weight: bold;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  /* Back to Home button */
+  .back-home {
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .back-home:hover {
+    background-color: darkgreen;
+  }
+  
